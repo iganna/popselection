@@ -1,21 +1,20 @@
 function b = change_encoding(a, flag)
-% dnds_apriori - This function calculates values required for dn/ds calculation
+% change_encoding - This function change the enciding of nucleatide
+% alignment
 %
-% Inputs: none
+% Inputs: 
+%    a - a nuclotice alignment represented by a matrix with ACGT- symbols 
+%        or a matrix with 12340 symbols    
+%        case of ACGT is not important
+%    flag - an instruction what changing should be performed. 
+%           if a flag value equals to zero then (ACGT-) -> (12340)
+%           if a flag value is not zero (one, for example), then
+%                 (12340) -> (ACGT-)
 %
 % Outputs:
-%    n_site - the matrix (64x64) containing at (i,j) position a minimum number 
-%    of non-synonymous substitutios which is required to obtain j-th codon
-%    from i-th
-%    s_site - the matrix (64x64) containing at (i,j) position a minimum number 
-%    of synonymous substitutios which is required to obtain j-th codon
-%    from i-th
-%    n_subst - a vector containing at i-th position
-%    a number of single non-synonymous substitutions within i-th codon
-%    s_subst - a vector containing at i-th position
-%    a number of single synonymous substitutions within i-th codon
+%    a - the matrix with the alignment in another encoding
 %
-% Other m-files required: uniquemy, dnds_apriori, change_encoding
+% Other m-files required: none
 %
 % Author: Anna A. Igolkina
 % email address: igolkinaanna11@gmail.com

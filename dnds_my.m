@@ -31,7 +31,6 @@ function [dn, ds, dn_by_pos, ds_by_pos] = dnds_my(seqs, orf, win, type, n_site, 
 % Last revision: 01-Jan-2018
 
 
-
 seqs(:,1:(orf-1)) = [];
 seqs = changeCoding(seqs, 0);
 clear seqs_aa_idx
