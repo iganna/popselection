@@ -1,4 +1,21 @@
-function a = nt2aamy(nts, ORF)
+function a = nt2aamy_nod(nts, ORF)
+% nt2aamy_nod - converstor of an alignment of nucleotide sequences to the
+%           alignment of amino acid sequences
+%
+% Inputs:  
+%          nts - a multiple alighnment represented as a matrix with char
+%                ACGT-symbols
+%          ORF - Open Reading Frame: start of the codon (1, 2 or 3)
+%
+% Outputs:
+%    a - amino acid alignment
+%
+% Other m-files required: none
+%
+% Author: Anna A. Igolkina
+% email address: igolkinaanna11@gmail.com
+% Last revision: 01-Jan-2018
+
 
 nts = upper(nts);
 code = ['KAAA'
